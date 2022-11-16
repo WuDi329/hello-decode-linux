@@ -1,0 +1,4 @@
+/home/wudi/Desktop/hellodecode/hello-decode/examples/hello/hello-decode/build/CMakeFiles/rebuild_cache.dir
+/home/wudi/Desktop/hellodecode/hello-decode/examples/hello/hello-decode/build/CMakeFiles/edit_cache.dir
+/home/wudi/Desktop/hellodecode/hello-decode/examples/hello/hello-decode/build/CMakeFiles/hello-decode.dir
+/home/wudi/Desktop/hellodecode/hello-decode/examples/hello/hello-decode/build/CMakeFiles/run.dir

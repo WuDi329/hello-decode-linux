@@ -1,0 +1,1 @@
+/usr/bin/c++  -O2 -g -DNDEBUG   CMakeFiles/hello-decode.dir/src/hello-decode.cpp.o  -o hello-decode /home/wudi/intel/oneapi/vpl/2022.1.0/lib/libvpl.so.2 -lva-drm -lva 

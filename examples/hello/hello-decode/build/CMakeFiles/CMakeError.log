@@ -1,0 +1,35 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/wudi/Desktop/hellodecode/hello-decode/examples/hello/hello-decode/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_64ba4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_64ba4.dir/build.make CMakeFiles/cmTC_64ba4.dir/build
+make[1]: 进入目录“/home/wudi/Desktop/hellodecode/hello-decode/examples/hello/hello-decode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_64ba4.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_64ba4.dir/CheckSymbolExists.c.o   -c /home/wudi/Desktop/hellodecode/hello-decode/examples/hello/hello-decode/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_64ba4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64ba4.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_64ba4.dir/CheckSymbolExists.c.o  -o cmTC_64ba4 
+CMakeFiles/cmTC_64ba4.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_64ba4.dir/build.make:97: recipe for target 'cmTC_64ba4' failed
+make[1]: *** [cmTC_64ba4] Error 1
+make[1]: 离开目录“/home/wudi/Desktop/hellodecode/hello-decode/examples/hello/hello-decode/build/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_64ba4/fast' failed
+make: *** [cmTC_64ba4/fast] Error 2
+
+File /home/wudi/Desktop/hellodecode/hello-decode/examples/hello/hello-decode/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
